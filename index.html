@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="ĐĂNG KÝ SINH VIÊN 5 TỐT">
+    <title>ĐĂNG KÝ SINH VIÊN 5 TỐT NĂM HỌC 2019 - 2020</title>
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	 <link rel="shortcut icon" href="./images/1.png" type="image/x-icon"/>
+
+</head>
+
+<body>
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <div class="card-inside" style="padding:0 30px">
+                    <br />
+                    <h2 class="title">ĐĂNG KÍ THAM GIA SINH VIÊN 5 TỐT<br> <strong>NĂM HỌC 2019 - 2020</strong></h2>
+                        <div class="input-group">
+                            <input id="hovaten" class="input--style-2" type="text" placeholder="Họ và tên" name="hovaten">
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input id="masv" class="input--style-2" type="text" placeholder="Mã Sinh Viên" name="masv" oninvalid="this.setCustomValidity('Nhập mã sinh viên')" oninput="setCustomValidity('')">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input id="lop" class="input--style-2" type="text" placeholder="Lớp" name="lop">
+                                </div>
+                            </div>
+                        </div>
+						
+                          
+                        <div class="input-group">
+                            <input id="email" class="input--style-2" type="email" placeholder="Email" name="email">
+                        </div>
+						<div class="input-group">
+						
+							<input type="text" name="DIENTHOAI" id="sdt" placeholder="Số điện thoại?" class="input--style-2" required="" oninvalid="this.setCustomValidity('Nhập số điện thoại')" oninput="setCustomValidity('')">
+						</div>
+						<div class="fix-font">Bạn sẽ tham gia tour nào ?(*)</div>
+							<div class="col-md-12 fix-join-tour"><input class="fix-checkbox" type="checkbox" id="tour1" name="tour1" /><span class="fix-font f-s-14">Tour 1: Công ty IVC, 13h00 Thứ 4 ngày 13/11/2019 <sup class="ticket-left color-r">(Còn Vé)</sup></span></div>
+							<div class="col-md-12 fix-join-tour"><input class="fix-checkbox" type="checkbox" id="tour2" name="tour2" /><span class="fix-font f-s-14">Tour 2: Công ty DXC, 12h30 Thứ 5 ngày 14/11/2019 <sup class="ticket-left color-r">(Còn Vé)</sup></span></div>
+						</div>
+                        <div class="input-group">
+
+                            <textarea id="cauhoi" class="input--style-2" placeholder="Bạn có gặp khó khăn gì không" style="border:none;width:100%" ></textarea>
+                        </div>
+                        <div class="p-t-30">
+                            <button id="submitIOT" class="btn btn--radius btn--green">ĐĂNG KÍ</button>
+                        </div>
+
+                    <div id="box-loader" class="is-loading is-hidden">
+                        <div id="loader">
+                            <div id="shadow"></div>
+                            <div id="box"></div>
+                        </div>
+                    </div>
+                    <div id="result" class="is-result is-hidden">
+                        <div id="text_result">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</body>
+
+</html>
